@@ -1,4 +1,4 @@
-crequire("dotenv").config();
+require("dotenv").config();
 
 const TelegramBot = require("node-telegram-bot-api");
 
@@ -17,22 +17,4 @@ bot.onText(/\/start/, (msg) => {
 
 });
 
-console.log("Bot běží...");onst TelegramBot = require("node-telegram-bot-api");
-
-const token = "8827922242:AAG8zkX5SfKIl6GJNeGu3DJpNoJxz7EwJh4";
-
-const bot = new TelegramBot(token, {
-  polling: true
-});
-
-bot.onText(/\/start/, (msg) => {
-
-  bot.sendMessage(
-    msg.chat.id,
-    "Vítej v Rozpočetníku 🚀"
-  );
-
-});
-
 console.log("Bot běží...");
-
