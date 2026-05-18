@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rozpočetník</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <h1>Rozpočetník</h1>
+      <p>Simple budget tracker</p>
+    </header>
+
+    <section class="balance-card">
+      <h2>Zůstatek</h2>
+      <h3 id="balance">0 Kč</h3>
+    </section>
+
+    <section class="add-transaction">
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Např. Potraviny"
+      >
+
+      <input
+        type="number"
+        id="amount"
+        placeholder="Částka"
+      >
+
+      <select id="type">
+        <option value="expense">Výdaj</option>
+        <option value="income">Příjem</option>
+      </select>
+
+      <button id="addBtn">
+        Přidat
+      </button>
+
+    </section>
+
+    <section class="transactions">
+
+      <h2>Transakce</h2>
+
+      <ul id="transactionList"></ul>
+
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
